@@ -10,17 +10,16 @@
 В программе решения не выносены в отдельные функции.
 - выносим адрес файла в константную переменую.
 - создаём объект FILE
-
-  {
-const char* path = "text.txt"; 
-    FILE* f; 
-    char cc;
-   } 
 - далее находим длину строки
 
  {
-    int len = 0;
+    
 
+
+    const char* path = "text.txt"; 
+    FILE* f; 
+    char cc;
+    int len = 0;
     if (fopen_s(&f, path, "r") != NULL)
     {
         cout << "Error! File can't be opened.\n";
