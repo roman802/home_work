@@ -89,18 +89,20 @@ char* arr = new char[len];
         arr2[i] = arr[i];
     }
     - перезаписываем файл с новыми данными.
-   
-    
     if (fopen_s(&f, path, "w") != NULL)
     {
         cout << "Error! File can't be opened.\n";
     }
     else
     {
+
         for (int i = 0; i < sizeof(arr2); i++)
         {
             fputs(&arr2[i], f);
         }
+
+
+
         fclose(f);
     }
     }
