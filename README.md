@@ -85,7 +85,7 @@ char* arr = new char[len];
     - заполняем новый массив с новыми данными
    
 
-    {
+    
     for (int i = 0; i < index_end; i++)
     {
         arr2[i] = arr[i];
@@ -94,6 +94,8 @@ char* arr = new char[len];
     - перезаписываем файл с новыми данными.
    
 
+
+'''
     if (fopen_s(&f, path, "w") != NULL)
     {
         cout << "Error! File can't be opened.\n";
@@ -106,7 +108,7 @@ char* arr = new char[len];
         }
         fclose(f);
     }
-    }
+    '''
 
 ВСЁ!
   
