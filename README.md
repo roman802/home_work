@@ -83,11 +83,14 @@ char* arr = new char[len];
     }
  }
     - заполняем новый массив с новыми данными
+   
+
     {
     for (int i = 0; i < index_end; i++)
     {
         arr2[i] = arr[i];
     }
+    
     - перезаписываем файл с новыми данными.
    
 
@@ -97,14 +100,10 @@ char* arr = new char[len];
     }
     else
     {
-
         for (int i = 0; i < sizeof(arr2); i++)
         {
             fputs(&arr2[i], f);
         }
-
-
-
         fclose(f);
     }
     }
